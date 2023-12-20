@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background {
+  background-color: rgb(68, 68, 68);
+  width: 100%;
+  height: 100vh;
+  .flexs {
+    padding-top: 30px;
+
+    .controlimages {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      .player1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        .svgcontrol {
+          display: flex;
+          flex-direction: column;
+          gap: 35px;
+          align-items: center;
+          svg {
+            color: white;
+            width: 30px;
+            height: 30px;
+          }
+          h2 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: 25px;
+          }
+        }
+        .playercontrol {
+          display: flex;
+
+          gap: 30px;
+          img {
+            width: 70px;
+            cursor: pointer;
+          }
+        }
+        .playerselect {
+          display: flex;
+
+          justify-content: center;
+          align-items: center;
+          padding-top: 30px;
+        gap: 20px;
+
+          h2 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: 16px;
+        font-weight: bolder;
+        
+
+          }
+          img {
+            width: 70px;
+          }
+        }
+      }
+      .images {
+        display: flex;
+      
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+       padding-top: 50px;
+       h2 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        font-size: 16px;
+        font-weight: bolder;
+      }
+        img {
+          width: 70px;
+        }
+      }
+    }
+    .winner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin-top: 50px;
+  
+    
+      h2 {
+        background-color: white;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 20px;
+        border-radius: 20px;
+        color: rgb(68, 68, 68);
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media(min-width:992px){
+  .background{
+    .flexs{
+      .controlimages{
+        .player1{
+          .svgcontrol{
+            h2{
+              font-size: 40px;
+            }
+            svg{
+              width: 50px;
+              height: 50px;
+            }
+          }
+          .playercontrol{
+            gap: 150px;
+            img{
+              width: 110px;
+
+            }
+          }
+          .playerselect{
+            h2{
+              font-size: 25px;
+            }
+            img{
+              width: 90px;
+              
+            }
+          }
+        }
+        .images{
+          h2{
+            font-size: 25px;
+          }
+          img{
+            width: 90px;
+            
+          }
+        }
+      }
+      .winner{
+        margin-top: 120px;
+      }
+    }
+  }
+}
